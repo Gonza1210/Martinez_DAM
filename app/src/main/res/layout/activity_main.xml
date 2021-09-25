@@ -1,18 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="@dimen/textoPlano_width"
+        android:layout_height="@dimen/textoPlano_height"
+        android:background="@color/fondo"
+        android:text="@string/titulo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_TextoPlano" />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="@dimen/editTexto_width"
+        android:layout_height="@dimen/editTexto_height"
+        android:ems="10"
+        android:textSize="@dimen/font_size_editText"
+        android:inputType="textPersonName"
+        android:text="@string/titulo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:background="@color/fondo"
+        android:textColor="@color/white"
+        android:layout_width="@dimen/textoPlano_width"
+        android:layout_height="@dimen/textoPlano_height"
+        android:text="@string/descOpcional"
+        android:textSize="@dimen/font_size_TextoPlano"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="@dimen/editTexto_width"
+        android:layout_height="@dimen/editTextMulti_height"
+        android:ems="10"
+        android:visibility="gone"
+
+        android:inputType="textPersonName"
+        android:maxLines="5"
+        android:text="@string/descri"
+        android:textSize="@dimen/font_size_editText"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:background="@color/fondo"
+        android:textColor="@color/white"
+        android:layout_width="@dimen/textoPlano_width"
+        android:layout_height="@dimen/textoPlano_height"
+        android:text="@string/correo_Text"
+        android:textSize="@dimen/font_size_TextoPlano"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="@dimen/editTexto_width"
+        android:layout_height="@dimen/editTexto_height"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/correo_Edit"
+        android:textSize="@dimen/font_size_editText" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="@dimen/textoPlano_width"
+        android:layout_height="@dimen/textoPlano_height"
+        android:background="@color/fondo"
+        android:text="@string/precio_Text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_TextoPlano"
+        />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="@dimen/editTexto_width"
+        android:layout_height="@dimen/editTexto_height"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/precio"
+        android:textSize="@dimen/font_size_editText"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="@dimen/textoPlano_width"
+        android:layout_height="@dimen/textoPlano_height"
+        android:background="@color/fondo"
+        android:text="@string/Categoria"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_TextoPlano"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="@dimen/editTexto_width"
+        android:layout_height="@dimen/editTexto_height"
+        android:textSize="@dimen/font_size_editText"
+        android:entries="@array/Categoria_Items"
+
+
+        />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="@dimen/editTexto_width"
+        android:layout_height="@dimen/editTexto_height"
+        android:textSize="@dimen/font_size_TextoPlano"
+        android:text="@string/descuento"
+
+
+        />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="@dimen/editTexto_width"
+        android:layout_height="@dimen/editTexto_height"
+        android:visibility="gone"
+        android:min="0"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/txtPorcentaje"
+        android:layout_width="@dimen/editTexto_width"
+        android:layout_height="@dimen/textoPlano_height"
+        android:textAlignment="center"
+        android:text="0%"
+        android:textSize="@dimen/font_size_editText"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="@dimen/editTexto_width"
+        android:layout_height="@dimen/textoPlano_height"
+        android:text="@string/retira"
+        android:textSize="@dimen/font_size_TextoPlano" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="@dimen/textoPlano_width"
+        android:layout_height="@dimen/textoPlano_height"
+        android:background="@color/fondo"
+        android:text="@string/dirRetiro"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_TextoPlano" />
+
+    <EditText
+        android:id="@+id/dirRetiro"
+        android:layout_width="@dimen/editTexto_width"
+        android:layout_height="@dimen/editTexto_height"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/dirRetiro"
+        android:textSize="@dimen/font_size_editText"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="@dimen/editTexto_width"
+        android:layout_height="@dimen/textoPlano_height"
+        android:text="@string/TerCond"
+        android:textSize="@dimen/font_size_TextoPlano"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/BotonPublicar" />
+
+</LinearLayout>

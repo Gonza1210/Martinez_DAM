@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Martinez_DAM</string>
-</resources>
+    <string name="titulo">Título</string>
+    <string name="descOpcional">Descripción (Opcional)</string>
+    <string name="descri">Descripción del Producto</string>
+    <string name="correo_Text">Correo de Contacto</string>
+    <string name="correo_Edit">Correo Electronico</string>
+    <string name="precio_Text">Precio</string>
+    <string name="precio">$0,00</string>
+    <string name="Categoria">Categoria</string>
+    <string name="descuento">Ofrecer decuento de envío</string>
+    <string-array name="Categoria_Items">
+        <item>Seleccione</item>
+        <item>INDUMENTARIA</item>
+        <item>ELECTRONICA</item>
+        <item>ENTRETENIMIENTO</item>
+        <item>JARDIN</item>
+        <item>VEHICULOS</item>
+        <item>JUGUETES</item>
+
+    </string-array>
+
+    <string name="retira">Retiro en persona</string>
+    <string name="dirRetiro">Dirección de retiro</string>
+    <string name="TerCond">Acepta los terminos y condiciones</string>
+    <string name="BotonPublicar">PUBLICAR</string>
+    </resources>
